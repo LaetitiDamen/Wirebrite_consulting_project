@@ -1,0 +1,30 @@
+<aura:component controller="OpportunitySearchController" implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:appHostable"> 
+
+    <aura:attribute name="searchResults" type="List" default="" />
+
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        
+        <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+        
+        <span>Search for Opportunities by Keyword</span>
+        </h2>
+        </div>
+        </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-form-element">
+                <label class="slds-form-element__label" for="text-input-id-1">
+                <abbr class="slds-required" title="required">* </abbr>Keyword</label>
+                <div class="slds-form-element__control">
+                <input type="text" id="text-input-id-1" placeholder="Search" required="" class="slds-input" />
+                </div>
+                </div>
+                <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }"/>
+        </div>
+        </article>
+
+
+</aura:component>	
