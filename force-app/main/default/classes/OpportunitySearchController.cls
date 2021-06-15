@@ -12,7 +12,7 @@ public class OpportunitySearchController {
     	get {
     		if (searchText == null) searchText = 'Acme'; // prefill the serach box for ease of use
     		return searchText;
-    	}
+    	}é
     	set;
 	}
 

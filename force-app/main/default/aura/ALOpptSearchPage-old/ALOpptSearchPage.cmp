@@ -1,11 +1,11 @@
 <aura:component controller="LCOpportunitySearchController" implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:appHostable">
 
-    <!-- Ici on définit l'attribut searchResults pour stocker la liste des opportunities -->
+    <!-- Ici on définit l'attributs searchResults pour stocker la liste des opportunity -->
     <aura:attribute name="searchResults" type="List"/>
-    <!-- Ici on définit l'attribut recordId pour stocker l'id de account rendu par salesforce directement -->
+    <!-- Ici on définit l'attributs recordId pour stocker l'id de account rendue par salesforce directement -->
     <aura:attribute name="recordId" type="Id" />
 
-    <!-- Ici on définit l'attribut searchText pour stocker la clé de recherche -->
+    <!-- Ici on définit l'attributs searchText pour stocker la clé de recherche -->
     <aura:attribute name="searchText" type="String" default=""/>
 
     <article class="slds-card">
@@ -45,4 +45,6 @@
             </table>
         </div>
     </article>
+
+
 </aura:component>
